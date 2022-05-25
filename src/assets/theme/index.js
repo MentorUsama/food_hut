@@ -8,7 +8,7 @@ import {components} from './components/index'
 export default createTheme({
   breakpoints: { ...breakpoints },
   components: { ...components },
-  direction: "ltr",
+  direction: "rtl",
   // mixins:{},
   palette: { ...palette },
   // shadows:[],

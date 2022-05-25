@@ -14,7 +14,6 @@ import Divider from '@mui/material/Divider';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 // import Paper from '@mui/material/Paper';
 
@@ -24,6 +23,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
+import Typography from '@mui/material/Typography';
 
 const style = {
   width: '100%',
@@ -33,7 +33,7 @@ const style = {
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" dir='rtl'>
       <ThemeProvider theme={theme}>
         {/* <Paper> */}
 
@@ -55,6 +55,9 @@ function App() {
               </Typography>
               <Button color="inherit">Login</Button>
             </Toolbar>
+
+
+            <Typography>Hello my name is muhammad usama</Typography>
           </AppBar>
         </Box>
 
