@@ -5,16 +5,16 @@ import { createTheme } from "@mui/material/styles";
 import { breakpoints, palette, typography, zIndex } from './base/index'
 import {components} from './components/index'
 
-export default createTheme({
+const theme=(mode,direction,language)=> createTheme({
   breakpoints: { ...breakpoints },
   components: { ...components },
-  direction: "rtl",
-  // mixins:{},
-  palette: { ...palette },
-  // shadows:[],
-  shape: { borderRadius: 4 },
-  // spacing: ƒ ()
-  // transitions:{},
+  direction: direction,
+  language: language,
+  palette: { 
+    mode: mode,
+    ...palette(mode) 
+  },
   typography: { ...typography },
   zIndex: { ...zIndex }
 })
+export default theme
