@@ -6,16 +6,12 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Paper from '@mui/material/Paper';
 // My Imports
 import theme from './assets/theme/index'
+import Header from './Components/Header/Header';
 
 function App() {
   const [mode, setMode] = React.useState('light');
   const [direction, setDirection] = React.useState("ltr");
   const [language, setLanguage] = React.useState("en");
-  const toggleLanguage = () => {
-    const prev_language = language;
-    setLanguage(prev_language === "en" ? "ur" : "en");
-    setDirection(direction === "rtl" ? "ltr" : "rtl")
-  }
   var selectedTheme = React.useMemo(() => theme(mode, direction, language), [mode, language, direction]);
 
   return (
@@ -23,8 +19,8 @@ function App() {
       <div className="App" dir={direction}>
         <ThemeProvider theme={selectedTheme}>
           <CssBaseline />
-          <Paper elevation={0} setMode={setMode} toggleLanguage={toggleLanguage} to sx={{ borderRadius: 0, minHeight: '100vh' }}>
-
+          <Paper elevation={0} sx={{ borderRadius: 0, minHeight: '100vh' }}>
+            <Header setLanguage={setLanguage} language={language} setDirection={setDirection} setMode={() => setMode(mode === 'light' ? 'dark' : 'light')} />
           </Paper>
         </ThemeProvider>
       </div>

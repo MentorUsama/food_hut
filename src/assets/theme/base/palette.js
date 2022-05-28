@@ -3,15 +3,18 @@ export const palette = (mode) => ({
         mode === 'light' ?
             {
                 primary: {
-                    main: '#F54748'
+                    main: '#F54748',
                 },
                 secondary: {
                     main: '#FDC55E',
                 },
+                ternary: {
+                    main: '#191919',
+                },
                 text: {
-                    primary: '#2E2E2E',
-                    secondary: '#F54748',
-                    ternary: '#FDC55E'
+                    primary: '#F54748',
+                    secondary: '#FDC55E',
+                    ternary: '#191919',
                 },
                 background: {
                     paper: '#FFFFFF',
@@ -30,10 +33,13 @@ export const palette = (mode) => ({
                 secondary: {
                     main: '#FDCE77',
                 },
+                ternary: {
+                    main: '#FFFFFF',
+                },
                 text: {
-                    primary: '#FFFFFF',
-                    secondary: '#F54748',
-                    ternary: '#FDC55E'
+                    primary: '#F54748',
+                    secondary: '#FDC55E',
+                    ternary: '#FFFFFF',
                 },
                 background: {
                     paper: '#191919',
