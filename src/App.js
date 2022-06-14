@@ -8,6 +8,7 @@ import Box from '@mui/material/Box';
 // My Imports
 import theme from './assets/theme/index'
 import Header from './Components/Header/Header';
+import HeroContainer from './Components/HeroContainer/HeroContainer';
 
 function App() {
   const [mode, setMode] = React.useState('light');
@@ -22,7 +23,13 @@ function App() {
           <CssBaseline />
           <Paper elevation={0} sx={{ borderRadius: 0 }}>
             <Box sx={{ minHeight: '100vh', backgroundImage: (theme) => theme.palette.gradient.primary, paddingTop: '32px' }}>
-              <Header setLanguage={setLanguage} language={language} setDirection={setDirection} setMode={() => setMode(mode === 'light' ? 'dark' : 'light')} />
+              <Header
+                setLanguage={setLanguage}
+                language={language}
+                setDirection={setDirection}
+                setMode={() => setMode(mode === 'light' ? 'dark' : 'light')}
+              />
+              <HeroContainer />
             </Box>
           </Paper>
         </ThemeProvider>

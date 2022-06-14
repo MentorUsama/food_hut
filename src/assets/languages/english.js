@@ -1,5 +1,12 @@
 export const english = {
-    "We're Serious For Food & Delivery.": "We're Serious For Food & Delivery.",
+    "We're": "We're",
+    "Serious": "Serious",
+    "For": "For",
+    "Food": "Food",
+    "&": "&",
+    "Delivery": "Delivery",
+    ".": ".",
+
     "OUR POPULAR FOOD": "OUR POPULAR FOOD",
     "OUR MENUES": "OUR MENUES",
     "WHY FOODHUT": "WHY FOODHUT",
