@@ -11,10 +11,10 @@ import MenuItem from '@mui/material/MenuItem';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
 import { useTheme } from '@mui/material/styles';
-import { get_text } from '../../assets/languages/index'
-import { Typography } from '@mui/material';
 import LogoDark from '../../assets/Images/LogoDark'
 import MyButton from '../Button/Button';
+import Typography from "../Typography/Typography";
+import {get_text} from "../../assets/languages/index";
 const pages = ['OUR POPULAR FOOD', 'OUR MENUES', 'WHY FOODHUT', 'TODAY SPECIAL OFFERS'];
 export default function Header(props) {
     const theme = useTheme();

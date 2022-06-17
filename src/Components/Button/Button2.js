@@ -1,7 +1,7 @@
 import React from 'react'
 import Play from '../../assets/icons/play'
 import Paper from '@mui/material/Paper';
-import { Typography } from '@mui/material';
+import Typography from "../Typography/Typography"
 import Box from '@mui/material/Box'
 export default function Button2() {
     return (
