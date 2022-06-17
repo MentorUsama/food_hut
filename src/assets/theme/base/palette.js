@@ -10,11 +10,14 @@ export const palette = (mode) => ({
                 },
                 ternary: {
                     main: '#191919',
+                    main_reverse: '#FFFFFF',
                 },
                 text: {
                     primary: '#F54748',
                     secondary: '#FDC55E',
                     ternary: '#191919',
+                    ternar_reverse:'#FFFFFF',
+                    grey:'#686D77'
                 },
                 background: {
                     paper: '#FFFFFF',
@@ -35,11 +38,14 @@ export const palette = (mode) => ({
                 },
                 ternary: {
                     main: '#FFFFFF',
+                    main_revers: '#191919'
                 },
                 text: {
                     primary: '#F54748',
                     secondary: '#FDC55E',
                     ternary: '#FFFFFF',
+                    ternary_reverse:'#191919',
+                    grey:'#686D77'
                 },
                 background: {
                     paper: '#191919',

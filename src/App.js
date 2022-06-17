@@ -17,12 +17,12 @@ function App() {
   var selectedTheme = React.useMemo(() => theme(mode, direction, language), [mode, language, direction]);
 
   return (
-    <CacheProvider>
+    // <CacheProvider>
       <div className="App" dir={direction}>
         <ThemeProvider theme={selectedTheme}>
           <CssBaseline />
           <Paper elevation={0} sx={{ borderRadius: 0 }}>
-            <Box sx={{ minHeight: '100vh', backgroundImage: (theme) => theme.palette.gradient.primary, paddingTop: '32px' }}>
+            <Box sx={{ minHeight: '100vh', backgroundImage: (theme) => theme.palette.gradient.primary, paddingTop: '32px',paddingLeft:'70px',paddingRight:'70px' }}>
               <Header
                 setLanguage={setLanguage}
                 language={language}
@@ -34,7 +34,7 @@ function App() {
           </Paper>
         </ThemeProvider>
       </div>
-    </CacheProvider>
+    // </CacheProvider>
   );
 }
 

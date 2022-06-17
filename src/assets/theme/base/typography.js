@@ -56,6 +56,12 @@ export const typography = {
         fontSize: "16px",
         lineHeight: "21px",
         textAlign: "center"
-    }
+    },
+    subtitle3: {
+        fontStyle: "normal",
+        fontWeight: 500,
+        fontSize: "17px",
+        lineHeight: "21px"
+    },
 
 }

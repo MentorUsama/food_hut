@@ -14,6 +14,7 @@ import { useTheme } from '@mui/material/styles';
 import { get_text } from '../../assets/languages/index'
 import { Typography } from '@mui/material';
 import LogoDark from '../../assets/Images/LogoDark'
+import MyButton from '../Button/Button';
 const pages = ['OUR POPULAR FOOD', 'OUR MENUES', 'WHY FOODHUT', 'TODAY SPECIAL OFFERS'];
 export default function Header(props) {
     const theme = useTheme();
@@ -84,7 +85,7 @@ export default function Header(props) {
                             <MenuItem onClick={() => languageClickListener('en')}><Typography color="text.ternary">English</Typography></MenuItem>
                             <MenuItem color="ternary" onClick={() => languageClickListener('ur')}><Typography color="text.ternary">اردو</Typography></MenuItem>
                         </Menu>
-                        <Button variant="text" color="ternary">{get_text(theme.language, 'Downlaod App')}</Button>
+                        <MyButton sx={{marginRight:5}}>{get_text(theme.language, 'Downlaod App')}</MyButton>
                     </Box>
                 </Toolbar>
             </AppBar>
