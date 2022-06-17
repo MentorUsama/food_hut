@@ -85,7 +85,7 @@ export default function Header(props) {
                             <MenuItem onClick={() => languageClickListener('en')}><Typography color="text.ternary">English</Typography></MenuItem>
                             <MenuItem color="ternary" onClick={() => languageClickListener('ur')}><Typography color="text.ternary">اردو</Typography></MenuItem>
                         </Menu>
-                        <MyButton sx={{marginRight:5}}>{get_text(theme.language, 'Downlaod App')}</MyButton>
+                        <MyButton sx={{marginInlineStart:5}}>{get_text(theme.language, 'Downlaod App')}</MyButton>
                     </Box>
                 </Toolbar>
             </AppBar>

@@ -34,7 +34,7 @@ export default function HeroContainer() {
             <SearchBar placeholder={get_text(theme.language, "search")} />
           </Box>
           <Box sx={{ marginTop: '34px', display: 'flex' }}>
-            <Button sx={{ marginRight: 10 }}>{get_text(theme.language, "Downlaod App")}</Button>
+            <Button sx={{ marginInlineEnd:'40px' }}>{get_text(theme.language, "Downlaod App")}</Button>
             <Button2>Watch Video</Button2>
           </Box>
         </Grid>

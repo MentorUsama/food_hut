@@ -9,7 +9,7 @@ export default function Button2() {
             <Paper sx={styles.container}>
                 <Play />
             </Paper>
-            <Typography variant='subtitle3' color="text.grey" sx={{marginRight:'20px',fontWeight:'bold'}}>Play Now</Typography>
+            <Typography variant='subtitle3' color="text.grey" sx={{marginInlineStart:'20px',fontWeight:'bold'}}>Play Now</Typography>
         </Box>
 
     )
